@@ -7,7 +7,7 @@ import { SocketioService } from './../../../socketio.service'
 import { ToastrService } from 'ngx-toastr';
 
 
-interface Video {  
+interface Video {
   category : string;
   content :[{
     id:number;
@@ -33,8 +33,8 @@ export class ModifyvideosComponent implements OnInit {
     public dialog: MatDialog,
     private _socketIO : SocketioService,
     private toast : ToastrService,
-  ) { 
-    
+  ) {
+
     this._orientationService.getVideos(data.faculty.id.toString()).subscribe((result)=>{
       this.videos = result.data
     })
@@ -65,16 +65,16 @@ export class ModifyvideosComponent implements OnInit {
   editVideo(videoIndex : any,videoTittle : any,videoCategory : any)
   {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialog,{data:{id:videoIndex,tittle:videoTittle,category:videoCategory},width:"40%"})
-    
+
     dialogRef.afterClosed().subscribe(result => {
         if(result)
         {
-          this.toast.success("The video was successfully modified","Delete")
+          this.toast.success("The video was successfully modified","Altered")
           this._orientationService.getVideos(this.data.faculty.id.toString()).subscribe((result)=>{
             this.videos = result.data
           })
         }
-     
+
     });
   }
 

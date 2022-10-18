@@ -33,15 +33,13 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password" name="password" [(ngModel)]="password" required>
                 <small style="color: red;"> Password must have atleast 6 characters = 1 special character, 1 UPPERCASE, 1 lowercase [&] 1 number</small>
-
             </div>
-
             <div class="form-group">
                 <label for="exampleInputPassword1">Confirm Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Confirm your password" name="password" [(ngModel)]="password2" required>
             </div>
             <div>
-                <label  for="Policy">Do you agree to our Privacy & Cookies Policy &nbsp; </label> 
+                <label  for="Policy">Do you agree to our Privacy & Cookies Policy &nbsp; </label>
                 <input style="border-style:solid" type="checkbox" id="policy" name="policy" value="policy"[(ngModel)]="policy"> &nbsp;&nbsp;
                 <a  style="color: blue; font-weight: 800;cursor: pointer;"  (click)="readPolicy()"> read more </a>
             </div>
@@ -62,9 +60,9 @@
 
             <div class="form-group">
                 <p>
-                    We will not sell, share, or rent your Personal Information to any third party 
-                    or use your email address for unsolicited mail. Any emails sent by us will only 
-                    be in connection with the provision of authanticating your email. 
+                    We will not sell, share, or rent your Personal Information to any third party
+                    or use your email address for unsolicited mail. Any emails sent by us will only
+                    be in connection with the provision of authanticating your email.
                     We use cookies on our website to collect your names and later use it for your certificate. By clicking “ACCEPT ALL”, you consent to the use of ALL the cookies</p>
                     <div style="text-align: center;">
                         <a style="color: #0d4794; font-weight:800; " target=”_blank” href="https://popia.co.za/"> TO READ MORE ABOUT THE POPIA CLICK HERE</a>
@@ -90,7 +88,7 @@
                 <label for="exampleInputEmail1">One Time Pin</label>
                 <input type="text" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" class="form-control" id="otp" aria-describedby="emailHelp" placeholder="Enter OTP" name="otp" [(ngModel)]="otpField" required>
                 <small style="color:red;" id="emailHelp">
-                    <br>To access your student email 
+                    <br>To access your student email
                     <a style="font-weight: bold;" href="https://outlook.office.com/mail" target="_blank">Click here</a>
                 </small>
             </div>
