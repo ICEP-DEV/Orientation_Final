@@ -6,7 +6,7 @@
     <div style="width:70%;margin-left: 15%;">
 
         <p style="padding-top: 15px; font-weight: bold; font-size: 17px;  text-align: center;"> Complete the form to register. </p>
-        <p style="padding-top: 5px; font-size: 13px;  text-align: center;"> Step 1/2 </p>
+        <!--<p style="padding-top: 5px; font-size: 13px;  text-align: center;"> Step 1/2 </p>-->
         <span *ngIf="error" (click)="removeError()">{{ error }}</span>
         <form>
             <div class="form-group">
@@ -43,7 +43,7 @@
                 <input style="border-style:solid" type="checkbox" id="policy" name="policy" value="policy"[(ngModel)]="policy"> &nbsp;&nbsp;
                 <a  style="color: blue; font-weight: 800;cursor: pointer;"  (click)="readPolicy()"> read more </a>
             </div>
-            <button type="submit" style="margin-left: 35%; margin-top: 7%;margin-bottom: -9%;" class="btn btn-primary" (click)="sendOTP()">Next</button>
+            <button type="submit" style="margin-left: 35%; margin-top: 7%;margin-bottom: -9%;" class="btn btn-primary" (click)="sendOTP()">Register</button>
         </form>
 
     </div>
