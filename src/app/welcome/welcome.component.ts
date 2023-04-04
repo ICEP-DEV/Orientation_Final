@@ -12,4 +12,9 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  refreshPage() {
+    window.location.reload();
+   }
+
+
 }

@@ -505,6 +505,11 @@ export class CampusComponent implements OnInit {
   {
     this._bottomSheet.open(MeeteamComponent)
   }
+
+  refreshPage() {
+    window.location.reload();
+   }
+
 }
 
 //Delay of nextstep

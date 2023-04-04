@@ -171,7 +171,7 @@ import { SearchComponent } from './admin/search/search.component';
     MatProgressSpinnerModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDcGre3D-n-tmHa4UuaYaihYxS9ATuvgmQ'
-    })
+    }),
   ],
 
   schemas: [

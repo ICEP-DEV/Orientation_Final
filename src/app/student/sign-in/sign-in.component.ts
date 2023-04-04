@@ -73,5 +73,10 @@ export class SignInComponent implements OnInit {
       })
   }
 
+
+  refreshPage() {
+    window.location.reload();
+   }
+
   
 }

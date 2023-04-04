@@ -9,6 +9,8 @@ import { CookieService } from 'ngx-cookie-service'
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  router: any;
+  spinnerService: any;
 
   
   
@@ -27,6 +29,10 @@ export class HomeComponent implements OnInit {
   startOr()
   {
   }
- 
+
+  refreshPage() {
+    window.location.reload();
+   }
+
 
 }

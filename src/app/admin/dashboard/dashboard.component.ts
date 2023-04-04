@@ -205,4 +205,9 @@ export class DashboardComponent implements OnInit {
 
     
   }
+
+  refreshPage() {
+    window.location.reload();
+   }
+
 }

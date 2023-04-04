@@ -64,4 +64,8 @@ export class AdminLoginComponent implements OnInit {
       })
   }
 
+  refreshPage() {
+    window.location.reload();
+   }
+
 }

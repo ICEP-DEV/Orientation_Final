@@ -216,6 +216,11 @@ export class RegisterComponent implements OnInit {
   //   this.error = null;
   // }
 
+  refreshPage() {
+    window.location.reload();
+   }
+
+
 }
 
 

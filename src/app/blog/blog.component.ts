@@ -36,4 +36,9 @@ export class BlogComponent implements OnInit {
     
   }
 
+  refreshPage() {
+    window.location.reload();
+   }
+
+
 }

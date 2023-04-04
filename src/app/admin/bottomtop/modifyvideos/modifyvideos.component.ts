@@ -78,6 +78,9 @@ export class ModifyvideosComponent implements OnInit {
     });
   }
 
+  refreshPage() {
+    window.location.reload();
+   }
 
 }
 
@@ -147,6 +150,10 @@ export class DialogOverviewExampleDialog {
     })
 
   }
+
+  refreshPage() {
+    window.location.reload();
+   }
 
 }
 

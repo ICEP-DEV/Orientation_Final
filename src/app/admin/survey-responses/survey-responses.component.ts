@@ -109,6 +109,10 @@ export class SurveyResponsesComponent implements OnInit  {
     this._orientationService.getSurveyReport({"data":this.dataSource.filteredData[0]}).subscribe((e)=>console.log(e))
     
   }
+
+  refreshPage() {
+    window.location.reload();
+   }
   
 }
 
@@ -119,6 +123,7 @@ export interface Survey {
   StudentNo: string;
   Email: string;
   Survey: any[] ;
+  
 }
 
 const ELEMENT_DATA: Survey[] = [];

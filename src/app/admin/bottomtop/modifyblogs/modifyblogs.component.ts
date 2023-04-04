@@ -171,4 +171,9 @@ export class DialogOverviewEditBlog {
 
   }
 
+  refreshPage() {
+    window.location.reload();
+   }
+
+
 }
