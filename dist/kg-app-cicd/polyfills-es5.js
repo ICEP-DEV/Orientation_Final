@@ -4505,7 +4505,7 @@
     /***/
     function _(module, exports, __webpack_require__) {
       __webpack_require__(
-      /*! C:\Users\Nyambeni MG\Pictures\Orientation\New folder\Orientation_Final\node_modules\@angular-devkit\build-angular\src\webpack\es5-polyfills.js */
+      /*! C:\Users\Masedi\Videos\Orientation_Final\node_modules\@angular-devkit\build-angular\src\webpack\es5-polyfills.js */
       "voQr");
 
       __webpack_require__(
@@ -4513,7 +4513,7 @@
       "R0gw");
 
       module.exports = __webpack_require__(
-      /*! C:\Users\Nyambeni MG\Pictures\Orientation\New folder\Orientation_Final\src\polyfills.ts */
+      /*! C:\Users\Masedi\Videos\Orientation_Final\src\polyfills.ts */
       "hN/g");
       /***/
     },

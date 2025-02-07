@@ -3,12 +3,14 @@
 /* Home Style */
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
 body,
 html {
     overflow: hidden;
     width: 100%;
 }
 
+/*
 .container {
     position: absolute;
     z-index: 20;
@@ -33,9 +35,9 @@ html {
 }
 
 .container .box .title {
-    width: 200%;
-    position: relative;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 200px;
 }
@@ -113,16 +115,20 @@ html {
     text-transform: uppercase;
     letter-spacing: 5px;
 }
+*/
+
 
 @-webkit-keyframes mainBlock {
     0% {
         width: 0%;
         left: 0;
     }
+
     50% {
         width: 100%;
         left: 0;
     }
+
     100% {
         width: 0;
         left: 100%;
@@ -134,10 +140,12 @@ html {
         width: 0%;
         left: 0;
     }
+
     50% {
         width: 100%;
         left: 0;
     }
+
     100% {
         width: 0;
         left: 100%;
@@ -149,10 +157,12 @@ html {
         width: 0%;
         left: 0;
     }
+
     50% {
         width: 100%;
         left: 0;
     }
+
     100% {
         width: 0;
         left: 100%;
@@ -164,10 +174,12 @@ html {
         width: 0%;
         left: 0;
     }
+
     50% {
         width: 100%;
         left: 0;
     }
+
     100% {
         width: 0;
         left: 100%;
@@ -178,6 +190,7 @@ html {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -187,6 +200,7 @@ html {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -200,6 +214,7 @@ html {
         border: 0px solid #ddd;
         opacity: 0;
     }
+
     50% {
         width: 10px;
         height: 10px;
@@ -207,17 +222,20 @@ html {
         opacity: 1;
         bottom: 45px;
     }
+
     65% {
         width: 7px;
         height: 7px;
         bottom: 0px;
         width: 15px;
     }
+
     80% {
         width: 10px;
         height: 10px;
         bottom: 20px;
     }
+
     100% {
         width: 7px;
         height: 7px;
@@ -235,6 +253,7 @@ html {
         border: 0px solid #ddd;
         opacity: 0;
     }
+
     50% {
         width: 10px;
         height: 10px;
@@ -242,17 +261,20 @@ html {
         opacity: 1;
         bottom: 45px;
     }
+
     65% {
         width: 7px;
         height: 7px;
         bottom: 0px;
         width: 15px;
     }
+
     80% {
         width: 10px;
         height: 10px;
         bottom: 20px;
     }
+
     100% {
         width: 7px;
         height: 7px;
@@ -266,6 +288,7 @@ html {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -275,6 +298,7 @@ html {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -321,6 +345,7 @@ footer span i {
         opacity: 0;
         bottom: -80px;
     }
+
     100% {
         opacity: 1;
         bottom: 0px;
@@ -332,6 +357,7 @@ footer span i {
         opacity: 0;
         bottom: -80px;
     }
+
     100% {
         opacity: 1;
         bottom: 0px;
@@ -343,10 +369,12 @@ footer span i {
         opacity: 0;
         transform: scale(0);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.3) rotate(-2deg);
     }
+
     100% {
         opacity: 1;
         bottom: 0px;
@@ -358,10 +386,12 @@ footer span i {
         opacity: 0;
         transform: scale(0);
     }
+
     50% {
         opacity: 1;
         transform: scale(1.3) rotate(-2deg);
     }
+
     100% {
         opacity: 1;
         bottom: 0px;
@@ -370,7 +400,7 @@ footer span i {
 
 
 /* STYLING TEXT */
-
+/*
 header {
     color: #cfcfcf;
     position: relative;
@@ -382,6 +412,119 @@ header p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 20px;
     margin-bottom: 80px;
+}
+*/
+
+/* Home Style */
+
+body,
+html {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Centers the content vertically */
+    height: 100vh;
+    /* Ensures the header fills the full height of the screen */
+    position: relative;
+    overflow: hidden;
+    color: #cfcfcf;
+}
+
+.container {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Ensures content is centered vertically */
+}
+
+.container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-title {
+    padding: 10px;
+    display: flex;
+}
+
+.container-title h3 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.container .box .role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.container .box .role p {
+    font-family: "Lato";
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Button Styles */
+/* .myButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #ffc000;
+    font-weight: bold;
+    height: 80px;
+    width: 250px;
+    background-color: #0d4794;
+    font-size: 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+} */
+
+.myButton:hover {
+    color: #ffc000;
+    background-color: #0d4794;
+}
+
+.intro-text {
+    position: relative;
+    top: 20px;
+    z-index: -1;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.mdb-carousel-item {
+    height: 1300px;
+    width: 100%;
+}
+
+.mdb-carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .intro-text {
@@ -460,10 +603,6 @@ header p {
     height: 80px;
     border-radius: 100%;
     border: 4px solid #FBC638;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     animation: ring 1.5s infinite;
 }
@@ -521,10 +660,25 @@ button:focus::after {
         height: 30px;
         opacity: 1;
     }
+
     100% {
         width: 300px;
         height: 300px;
         opacity: 0;
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .myButton {
+        height: 70px;
+        width: 180px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .container-title {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -543,6 +697,7 @@ button:focus::after {
         font-weight: bolder;
         color: white;
     }
+
     .btn {
         align-self: start;
         ;
@@ -651,6 +806,7 @@ button:focus::after {
         height: 30px;
         opacity: 1;
     }
+
     100% {
         width: 300px;
         height: 300px;

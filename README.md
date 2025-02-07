@@ -1,5 +1,7 @@
 # KgAppCicd
 
+set NODE_OPTIONS=--openssl-legacy-provider
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
 ## Development server
